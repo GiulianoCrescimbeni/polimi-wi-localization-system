@@ -34,11 +34,9 @@ def find_top_sas_with_threshold(csv_folder, threshold_ratio=0.7):
         except Exception as e:
             print(f"Error in file {path}: {e}")
 
-    # Solo SA presenti in almeno soglia * numero_file
     min_required = int(threshold_ratio * total_files)
     valid_sas = {sa for sa, count in file_presence.items() if count >= min_required}
 
-    # Top 5 per numero totale di occorrenze
     top5 = Counter({sa: count for sa, count in sa_counter.items() if sa in valid_sas}).most_common(5)
 
     print(f"\nTop 5 Source Addresses (present in at least {threshold_ratio*100:.0f}% of files):")
@@ -51,5 +49,4 @@ def find_top_sas_with_threshold(csv_folder, threshold_ratio=0.7):
         else:
             print(f"{sa} - {count} total entries, present in {files_present}/{total_files} files, RSSI variance: insufficient data")
 
-# Esegui
 find_top_sas_with_threshold("SampleData/", threshold_ratio=0.7)
