@@ -36,7 +36,7 @@ This grid was used during the data acquisition phase to collect RSSI values at p
 This heatmap shows the signal intensity distribution for one of the selected MAC addresses.
 
 <p align="center">
-  <img src="Images/HeatMap.png" alt="Heat Map" width="500"/>
+  <img src="Images/HeatMap.png" alt="Heat Map" width="600"/>
 </p>
 
 ### KNN Confusion Matrix
@@ -44,7 +44,7 @@ This heatmap shows the signal intensity distribution for one of the selected MAC
 The confusion matrix illustrates the excellent performance of the KNN classifier.
 
 <p align="center">
-  <img src="Images/KNNMatrix.png" alt="KNN Matrix" width="500"/>
+  <img src="Images/KNNMatrix.png" alt="KNN Matrix" width="600"/>
 </p>
 
 ## Results Summary
