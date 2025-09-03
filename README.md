@@ -58,10 +58,32 @@ The confusion matrix illustrates the excellent performance of the KNN classifier
 
 ## Project Structure
 
-- `*.py` – Python scripts for data manipulation and localization algorithms
-- `*.csv` – Processed datasets (not included here)
-- `*.png` – Confusion matrices, heatmaps, and accuracy plots
-- `WN_IndoorLocalizationSystem.pdf` – Full project report
+- **HousePlant/**  
+  Includes floor plan files of the environment used for data collection, with annotated sampling points.
+
+- **SampleData/**  
+  Original raw data files (PCAP and unprocessed CSV), organized by measurement position.
+
+- **ProcessedData/**  
+  Contains datasets that have been cleaned, filled with dummy values, and augmented as needed—these are used as input for model training.
+
+- **BalancedData/**  
+  Contains datasets balanced across sampling positions to ensure uniform training conditions.
+
+- **LocalizationAlgorithms/**  
+  Includes Python scripts implementing the four machine learning algorithms (Horus, Bayesian Network, KNN, Random Forest), with training and evaluation logic.
+
+- **ProcessingScripts/**  
+  Utility Python scripts used during the offline phase:
+  - PCAP to CSV conversion  
+  - Signal cleaning and normalization  
+  - Dummy entry insertion  
+  - Data augmentation tools  
+
+- **WN_IndoorLocalizationSystem.pdf**  
+  Final report of the project, with detailed explanation of the methodology, implementation, and results.
+
+---
 
 ## Documentation
 
