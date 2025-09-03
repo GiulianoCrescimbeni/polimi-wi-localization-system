@@ -20,6 +20,26 @@ The goal is to localize a device indoors by analyzing Wi-Fi signal strengths rec
   - Confusion matrices
   - Classification accuracy
   - Mean localization error (in meters)
+ 
+## Visualization
+
+### House Floor Plan
+
+This grid was used during the data acquisition phase to collect RSSI values at predefined positions.
+
+![House Floor Plan](HousePlant/HousePlantSamplingPoints.png)
+
+### Heatmap Example
+
+This heatmap shows the signal intensity distribution for one of the selected MAC addresses.
+
+![Heatmap RSSI](Images/HeatMap.png)
+
+### KNN Confusion Matrix
+
+The confusion matrix illustrates the excellent performance of the KNN classifier.
+
+![KNN Confusion Matrix](Images/KNNMatrix.png)
 
 ## Results Summary
 
