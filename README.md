@@ -27,19 +27,25 @@ The goal is to localize a device indoors by analyzing Wi-Fi signal strengths rec
 
 This grid was used during the data acquisition phase to collect RSSI values at predefined positions.
 
-![House Floor Plan](HousePlant/HousePlantSamplingPoints.png)
+<p align="center">
+  <img src="HousePlant/HousePlantSamplingPoints.png" alt="House Plant" width="750"/>
+</p>
 
 ### Heatmap Example
 
 This heatmap shows the signal intensity distribution for one of the selected MAC addresses.
 
-![Heatmap RSSI](Images/HeatMap.png)
+<p align="center">
+  <img src="Images/HeatMap.png" alt="Heat Map" width="700"/>
+</p>
 
 ### KNN Confusion Matrix
 
 The confusion matrix illustrates the excellent performance of the KNN classifier.
 
-![KNN Confusion Matrix](Images/KNNMatrix.png)
+<p align="center">
+  <img src="Images/KNNMatrix.png" alt="KNN Matrix" width="700"/>
+</p>
 
 ## Results Summary
 
